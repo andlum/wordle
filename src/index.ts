@@ -1,6 +1,8 @@
 import figlet from "figlet";
 import readline from "readline";
 
+console.log(figlet.textSync("Let's Play Wordle"));
+
 const prompt = (guess: string, answer: string): boolean => {
   const formattedGuess = guess.toLowerCase().slice(0, 5);
   const result = new Array(5).fill("⬜");
